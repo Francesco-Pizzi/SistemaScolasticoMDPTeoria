@@ -12,7 +12,13 @@ public class Main {
 
         Corso c1 = new Corso("MDP", "Fornari");
 
-        Persona l1 = new Persona("Mario", "Rossi");
+        Persona persona1 = new Persona("Mario", "Rossi");
+
+        Esame e1 = new Esame("MDP", p1);
+
+        SistemaAutomatico sA = new SistemaAutomatico("chatGPT");
+
+        Esame e2 = new Esame("MDP", sA);
 
         s1.saluta();
         s2.saluta();
@@ -22,6 +28,11 @@ public class Main {
         c1.iscriviStudente(s2);
 
         c1.stampaIscritti();
+
+        e1.sostieniEsame(s1);
+        e1.sostieniEsame(s2);
+        e2.sostieniEsame(s1);
+        e2.sostieniEsame(s2);
 
     }
 }

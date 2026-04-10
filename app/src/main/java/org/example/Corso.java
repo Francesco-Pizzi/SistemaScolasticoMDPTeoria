@@ -26,7 +26,7 @@ public class Corso {
     public void stampaIscritti(){
         if (listaStudenti.isEmpty()) System.out.println("Nessuno studente");
         else for (Studente studente : listaStudenti) {
-            System.out.print(studente.getNomeCompleto() + ", ");
+            System.out.println(studente.getNomeCompleto() + " Iscritto al corso ");
         }
     }
 }
