@@ -5,12 +5,14 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Studente s1 = new Studente("Fra", "Piz", 130074);
-        Studente s2 = new Studente("Tom", "Bas", 130075);
+        Studente s1 = new Studente("Francesco", "Pizzi", 130074);
+        Studente s2 = new Studente("Tommaso", "Basili", 130075);
 
-        Professore p1 = new Professore("Fab", "For", "Informatica");
+        Professore p1 = new Professore("Fabrizio", "Fornari", "Informatica");
 
-        Corso c1 = new Corso("MDP", "For");
+        Corso c1 = new Corso("MDP", "Fornari");
+
+        Persona l1 = new Persona("Mario", "Rossi");
 
         s1.saluta();
         s2.saluta();

@@ -15,8 +15,8 @@ public class Studente extends Persona {
         return matricola;
     }
 
-    public String saluta(){
-        return "Buongiorno, io sono: " + getNomeCompleto();
+    public void saluta(){
+        System.out.println("Buongiorno, io sono: " + getNomeCompleto());
     }
 
 }

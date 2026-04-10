@@ -11,9 +11,8 @@ public class Persona {
         this.nome = nome;
         this.cognome = cognome;
     }
-    public String getNome() {
-        return nome;
-    }
+
+    public String getNome() { return nome; }
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -23,6 +22,7 @@ public class Persona {
     public void setCognome(String cognome) {
         this.cognome = cognome;
     }
+
     public String getNomeCompleto(){
         return this.nome + " " + this.cognome;
     }

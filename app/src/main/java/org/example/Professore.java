@@ -4,11 +4,11 @@ public class Professore extends Persona {
     private String settore;
 
     public Professore(String nome, String cognome, String settore) {
-        super(nome, cognome);
         if (settore == null) {
             throw new IllegalArgumentException("Settore non valido");
         }
         this.settore = settore;
+        super(nome, cognome);
     }
 
     public String getSettore() {
@@ -18,7 +18,7 @@ public class Professore extends Persona {
         this.settore = settore;
     }
 
-    public String presenta() {
-        return "Salve io sono: " + getNomeCompleto() + " ed insegno: " + this.getSettore();
+    public void presenta() {
+        System.out.println("Salve io sono: " + getNomeCompleto() + " ed insegno: " + this.getSettore());
     }
 }
